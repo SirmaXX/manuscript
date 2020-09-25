@@ -13,6 +13,8 @@ def LogPrinter(AlertLevel,text):
  elif AlertLevel == "Info":
    CreateFile(LogFolder+"Info/Info.txt")
    EditFile(LogFolder+"Info/Info.txt",Log)
+ elif AlertLevel == "Debug":
+   print(Log)
  else:
     CreateFile(LogFolder+"Info/Info.txt")
     EditFile(LogFolder+"Info/Info.txt",Log)
