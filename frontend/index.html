@@ -1,77 +1,80 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.72.0">
-    <title>Manuscript Editor</title>
+<html lang="tr">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Deniz Balcı,İlker Manap">
+  <meta name="theme-color" content="#7952b3">
+  <title>Manuscript Editor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+  </script>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="../manuscript(4).png" type="image/gif" sizes="16x16">
+  <link rel="shortcut icon" type="image/x-icon" href="../manuscript(4).png">
+  <style>
+    .line-numbers {
+      background-color: aqua;
+      text-align: right;
+      position: relative;
+      float: left;
+      border: none;
+      overflow: hidden;
+    }
 
-<link rel="icon" href="../manuscript(4).png" type="image/gif" sizes="16x16">
-<link rel="shortcut icon" type="image/x-icon" href="../manuscript(4).png" >
-<meta name="theme-color" content="#7952b3">
+    .numbered {
+      position: relative;
+      float: left;
+    }
+  </style>
+</head>
 
-
-    <style>
-.line-numbers {
-    background-color: aqua;
-    text-align: right;
-    position:relative;
-    float:left;
-    border: none;
-    overflow: hidden;
-}
-.numbered {
-    position: relative;
-    float:left;
-}
-    </style>
-
-    
-  </head>
-  <body>
-    
-<header class="bg-dark justify-content-center">
+<body>
+  <header class="bg-dark justify-content-center">
     <h2 class="mx-auto text-light " style="width: 500px;">
-  <img src="../manuscript(3).png">  Manuscript Online Editor
-      </h2>
-   
-
-</header>
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img src="../manuscript(3).png"> Manuscript Online Editor
+    </h2>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Expand at lg</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">MENU</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+        aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <div class="collapse navbar-collapse" id="navbarsExample05">
         <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown"
+              aria-expanded="false">Files</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown"
+              aria-expanded="false">Settings</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown"
+              aria-expanded="false">Repository</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown05">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -79,65 +82,62 @@
             </ul>
           </li>
         </ul>
-        <form>
-          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-        </form>
+
       </div>
     </div>
   </nav>
-<main>
+  <main>
     <div class="container-fluid">
-        <div class="row align-items-start">
-            <div class="col-2 bg-dark" style="height:500px">
-              <p class="text-light">Files</p>
-              <hr class="text-light">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-            </div>
-            <div class="col-10  bg-dark " >
-                <textarea readonly="readonly" class="line-numbers" rows="5" cols="3"></textarea>
-                <textarea class="numbered" rows="5" cols="32"></textarea>
-            </div>
-          
-          </div>
+      <div class="row align-items-start">
+        <div class="col-2 bg-dark" style="height:500px">
+          <p class="text-light text-center">Files</p>
+          <hr class="text-light">
+          <ol class="text-white">
+            <li>Cras justo odio</li>
+            <li>Cras justo odio</li>
+            <li>Cras justo odio</li>
+            <li>Cras justo odio</li>
+            <li>Cras justo odio</li>
+          </ol>
+        </div>
+        <div class="col-10  bg-dark ">
+          <textarea style="height: 500px;" readonly="readonly" class="line-numbers" rows="5" cols="3"></textarea>
+          <textarea style="height: 500px;width:1000px;" class="numbered" rows="5" cols="32"></textarea>
+        </div>
       </div>
+    </div>
+  </main>
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-right mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1"> &copy; MANUSCRİPT</p>
+      <p class="mb-0"> <a href="https://github.com/SirmaXX/manuscript">Github Repo</a>.</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
 
+  <script>
+    $(".numbered").scroll(function (event) {
+      $(this).prev().height($(this).height());
+      $(this).prev()[0].scrollTop = this.scrollTop;
+    });
+    $(".numbered").keyup(function (event) {
+      var elm = $(this);
+      var lines = elm.val().split("\n");
+      var numbers = "";
+      for (var i = 0; i < lines.length; i++)
+        numbers += (i + 1) + "\n";
+      elm.prev().val(numbers);
+      elm.prev()[0].scrollTop = this.scrollTop;
+    });
+  </script>
 
-</main>
+</body>
 
-<footer class="text-muted py-5">
-  <div class="container">
-    <p class="float-right mb-1">
-      <a href="#">Back to top</a>
-    </p>
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      
-<script>
-
-$(".numbered").scroll(function(event) {
-    $(this).prev().height($(this).height());
-    $(this).prev()[0].scrollTop = this.scrollTop;
-});
-$(".numbered").keyup(function(event) {
-    var elm = $(this);
-    var lines = elm.val().split("\n");
-    var numbers = "";
-    for(var i=0; i<lines.length; i++)
-        numbers += (i+1) + "\n";
-    elm.prev().val(numbers);
-    elm.prev()[0].scrollTop = this.scrollTop;
-});
-</script>
-
-  </body>
 </html>
