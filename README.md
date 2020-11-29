@@ -1,7 +1,7 @@
 
  # ![manuscript!](manuscript(1).png "manuscript") Manuscript Editor 
 
-Online documentation editor based Git,Sphinx,Flask
+Online documentation editor based Git,Sphinx,Flask,MathJax
 
 ## Authors 
 İlker Manap  <br>
